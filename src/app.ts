@@ -14,7 +14,7 @@ app.use(helmet());
 // 2. CORS (before body parsers & routes)
 app.use(
     cors({
-        origin: ["http://localhost:3000", "https://sakib-admin.vercel.app", "https://www.sakibakondo.com", "https://sakibakondo.com"], // or specific domains in production
+        origin: ["http://localhost:3000"], // or specific domains in production
         methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
         credentials: true,
     }),
@@ -73,7 +73,7 @@ app.get("/", (req, res) => {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         ">
-            Portfolio Server
+            Al Quran Server
         </h1>
 
         <p style="
@@ -82,7 +82,7 @@ app.get("/", (req, res) => {
             line-height: 1.8rem;
             margin-bottom: 2rem;
         ">
-            Your server is running smoothly with optimized performance and modern architecture.
+            The server is running smoothly with optimized performance and modern architecture.
         </p>
     </main>
 
