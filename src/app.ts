@@ -14,7 +14,7 @@ app.use(helmet());
 // 2. CORS (before body parsers & routes)
 app.use(
     cors({
-        origin: ["http://localhost:3000"], // or specific domains in production
+        origin: ["http://localhost:3000", "https://quran-app-flax-three.vercel.app"], // or specific domains in production
         methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
         credentials: true,
     }),
